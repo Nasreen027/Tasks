@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css of bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <h1 id="heading">Hello Pakistan</h1>
+    <input type="text" class="form-control my-4 w-50" placeholder="Enter Bootstrap class" >
+    <button id="add" >Add</button>
+    <button id="remove" >Remove</button>
+    <button id="toggle" >Toggle</button>
+<script>
+    var add = document.querySelector("#add");
+    var remove = document.querySelector("#remove");
+    var toggle = document.querySelector("#toggle");
+    var inp = document.querySelector("input");
+    var h1 = document.querySelector("#heading");
+   
+
+    add.addEventListener("click",function(){
+        h1.classList.add(inp.value);
+    })
+
+    remove.addEventListener("click",function(){
+        h1.classList.remove(inp.value);
+    })
+
+         toggle.addEventListener("click",function(){
+            if(h1.classList.contains(inp.value)){
+                h1.classList.remove(inp.value);
+            }
+            else
+            {
+                h1.classList.add(inp.value);
+            }
+        })
+    </script>
+    
+
+
+   
+
+  </body>
+</html>

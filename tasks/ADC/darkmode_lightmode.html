@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .light_button {
+            display: none;
+        
+        }
+        .dark_button{
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="container p-5 mt-5">
+
+        <h1 class="h1">Contact Us</h1>
+        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatibus magnam natus esse
+            animi quis? A
+            inventore deleniti culpa provident, harum ex. Laborum, doloribus magnam? Doloribus suscipit quae adipisci
+            exercitationem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat repellendus natus a quia
+            asperiores. Cumque repudiandae veniam voluptatibus expedita magni quas quibusdam, dolorum eius
+            exercitationem dicta, dolorem similique non distinctio!</p> -->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 mt-5">
+                <h1 class="h1 pt-5">Contact us</h1>
+                <p>Our friendly team would love to hear from you :)</p>
+                <div class="mt-5">
+                    <label for=""><b>First name</b></label>
+                    <input type="text" placeholder="first name" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label for=""><b>Last name</b></label>
+                    <input type="text" placeholder="last name" class="form-control">
+
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="" class="h6"><b>Email</b></label>
+                    <input class="form-control" placeholder="itanexample@gmail.com"/>
+
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="" class="h6"><b>Phone</b></label>
+                    <input class="form-control" placeholder="03 xxxxxxxxx" />
+
+                </div>
+                <div class="form-group">
+                    <label for=""><b>Message</b></label>
+                    <textarea name="" cols="30" rows="6" class="form-control"
+                        placeholder="I would like to ask you..."></textarea>
+
+                </div>
+                <button type="button" class="dark_button btn btn-dark" onclick="Dark_Mode()">Send message</button>
+            <button type="button" class="light_button btn btn-light" onclick="Dark_Mode()">Send message</button>
+
+            </div>
+
+            <div class="col-md-6 mt-5"><img src="about.svg" alt=""></div>
+        </div><br>
+        <div>
+            <button type="button" class="dark_button btn btn-dark" onclick="Dark_Mode()">Turn on darkmode</button>
+            <button type="button" class="light_button btn btn-light" onclick="Dark_Mode()">Turn on light mode</button>
+        </div>
+        </div>
+
+            <!-- </div> -->
+
+
+            <script>
+                let Dark_Mode = () => {
+                    var element = document.body;
+                    element.classList.toggle("dark");
+
+                    $("button").toggle();
+
+                }
+
+            </script>
+
+</body>
+
+</html>
